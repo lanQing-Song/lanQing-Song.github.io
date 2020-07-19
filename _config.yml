@@ -103,6 +103,7 @@ theme: hexo-theme-butterfly
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: 'git'
-  repo: 'https://github.com/lanQing-Song/SlanQing-Song.github.io.git'
-  branch: hexo
+  repo: 'https://{lanQing-Song}:
+  {136929srz}@github.com/{lanQing-Song}/{SlanQing-Song}.github.io.git'
+  branch: master
 
