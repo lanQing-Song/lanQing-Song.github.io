@@ -92,7 +92,7 @@ ignore:
 
 # 音乐播放器
 aplayer:
-  asset_inject: true
+  asset_inject: false
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
