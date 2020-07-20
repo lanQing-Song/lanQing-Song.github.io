@@ -42,8 +42,8 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fab fa-github: https://github.com/xxxxx || Github
-  fas fa-envelope: mailto:xxxxxx@gmail.com || Email
+  fab fa-github: https://github.com/lanQing-Song || Github
+  fas fa-envelope: mailto:yang.rongsong@foxmail.com || Email
   fa fa-rss-square: /atom.xml ||RSS链接
   # fa fa-rss-square:
 
@@ -99,7 +99,7 @@ avatar:
 
 # the banner image of home page
 # 首页顶部图
-index_img: https://cdn.jsdelivr.net/gh/lanQing-Song/blogimages/13.jpg
+index_img: https://cdn.jsdelivr.net/gh/lanQing-Song/blogimages/12.png
 
 # 没有设置图片时的默认图
 # if the banner of page not setting,it will show the top_img
@@ -313,7 +313,7 @@ valine:
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
   placeholder: 给点建议吧！ # valine comment input placeholder(like: Please leave your footprints )
-  guest_info: lQ-Song,863426570@qq.com,meiyou #valine comment header info (nick/mail/link)
+  guest_info: 姓名,邮箱,meiyou #valine comment header info (nick/mail/link)
   recordIP: false # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg:  # valine background

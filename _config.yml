@@ -7,7 +7,7 @@ title: Song
 subtitle: '个人记录站'
 description: '该网站主要用来记录站主的一些琐事'
 keywords: lanQing-Song.github.io
-author: lQ-Song
+author: R&Song
 language: zh-CN
 timezone: Asia/Shanghai
 
@@ -92,12 +92,12 @@ ignore:
 
 # 音乐播放器
 aplayer:
-  asset_inject: false
+  asset_inject: true
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-butterfly
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
