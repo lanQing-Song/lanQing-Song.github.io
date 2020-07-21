@@ -8,10 +8,12 @@
 
 menu:
   首页: / || fas fa-home
-  归档: /archives/ || fas fa-archive
+  文章: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
   番剧: /fanju/ || fa fa-heartbeat
+  日志: /journal/ || fa fa-book
+  留言板: /message/ || fa fa-comment
   友链: /link/ || fas fa-link
   关于: /about/ || fa fa-exclamation-circle
   # 文档||fas fa-list:
@@ -214,7 +216,7 @@ related_post:
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption (圖片描述文字)
-photofigcaption: false
+photofigcaption: true
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
@@ -372,9 +374,10 @@ gitter:
 # Footer Settings
 # --------------------------------------
 
+# 底部博客开启时间
 since: 2020
 
-footer_custom_text:
+footer_custom_text: 欢迎来到我的博客，可以随便看看！
 
 footer_copyright: true
 
@@ -587,7 +590,7 @@ preloader: false
 
 # aside (側邊欄)
 # --------------------------------------
-
+# 侧边栏卡片相关的设置，位置等
 aside:
   enable: true
   mobile: true # display on mobile
@@ -608,7 +611,7 @@ aside:
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
-    color: false
+    color: true
   card_archives:
     enable: true
     type: monthly # yearly or monthly
@@ -627,29 +630,30 @@ busuanzi:
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: false
-  publish_date:
+  enable: true
+  publish_date: 2020/7/22 12:00:00
 
 # Bottom right button (右下角按鈕)
 # --------------------------------------
-
+# 网站字体的切换
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
   enable: true
   # The text of a button
-  default: 繁
+  default: 简
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
   defaultEncoding: 2
   # Time delay
   translateDelay: 0
   # The text of the button when the language is Simplified Chinese
-  msgToTraditionalChinese: '繁'
+  msgToTraditionalChinese: '简'
   # The text of the button when the language is Traditional Chinese
-  msgToSimplifiedChinese: '簡'
+  msgToSimplifiedChinese: '繁'
 
 # Read Mode (閲讀模式)
 readmode: true
 
+# 网站白天和黑夜的设置
 # dark mode
 darkmode:
   enable: true
@@ -659,7 +663,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: false
+  autoChangeMode: true
 
 # Lightbox (圖片大圖查看模式)
 # --------------------------------------
@@ -683,6 +687,7 @@ mermaid:
   # built-in themes: default/forest/dark/neutral
   theme: default
 
+# 文章提示标签
 # Note (Bootstrap Callout)
 note:
   # Note tag style values:
@@ -757,8 +762,8 @@ fragment_cache: true
 inject:
   
   head:
-
-    # - <link rel="stylesheet" href="/xxx.css">
+    
+    # - <link rel="stylesheet" href="">
 
   bottom:
 
