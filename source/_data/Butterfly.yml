@@ -160,8 +160,9 @@ post_meta:
     tags: true # true or false 文章頁是否顯示標籤
 
 # wordcount (字數統計)
+# 文章封面字数统计
 wordcount:
-  enable: false
+  enable: true
   post_wordcount: true
   min2read: true
   total_wordcount: true
@@ -681,6 +682,7 @@ medium_zoom: false
 
 # fancybox
 # http://fancyapps.com/fancybox/3/
+# 点击查看图片
 fancybox: true
 
 # Tag Plugins settings (標籤外掛)
@@ -715,8 +717,9 @@ note:
 # https://github.com/polonel/SnackBar
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
+# 点击之后弹出提示效果
 snackbar:
-  enable: false
+  enable: true
   position: bottom-left
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#121212' # The background color of Toast Notification in dark mode
@@ -772,6 +775,8 @@ inject:
     # - <link rel="stylesheet" href="">
 
   bottom:
+
+    # - <script src="/aplayer.js"></script>
 
     # - <script src="xxxx"></script>
 
