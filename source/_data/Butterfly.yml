@@ -20,6 +20,9 @@ menu:
   #   - Music || /music/ || fas fa-music
   #   - Movie || /movies/ || fas fa-video
 
+
+
+
 # Code Blocks (代碼相關)
 # --------------------------------------
 # 代码的一些相关设置
@@ -478,12 +481,12 @@ tag_ui: # 留空或 index
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 # White color will be shown as default
 # 网站背景
-background:
+background: '#efefef'
 
 # Show the footer background image (same as top_img)
 
 # footer背景是否和该文章top_img图一致
-footer_bg: true
+footer_bg: false
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
@@ -494,7 +497,7 @@ rightside-bottom:
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 150
   alpha: 0.6
   zIndex: -1
@@ -773,13 +776,16 @@ inject:
   
   head:
     
-    # - <link rel="stylesheet" href="">
+    - <link rel="stylesheet" href="/css/Rsong.css">
 
   bottom:
 
+    # - <div id="music" key="5f171fe7e4f4c" api="https://music.m0x.cn"></div><script id="xplayer" src="https://music.m0x.cn/Static/player2/js/player.js" ></script>
     # - <script src="/aplayer.js"></script>
 
     # - <script src="xxxx"></script>
+
+
 
 
 
