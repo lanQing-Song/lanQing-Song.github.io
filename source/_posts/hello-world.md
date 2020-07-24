@@ -1,9 +1,22 @@
 ---
-title: Hello World
-cover: https://cdn.jsdelivr.net/gh/lanQing-Song/blogimages/1.png
-type:
-comments: true
-aplayer: true
+title: Hello World   #文章标题
+cover: https://cdn.jsdelivr.net/gh/lanQing-Song/blogimages/1.png #文章缩略图(如果没有设置top_img,文章页顶部将显示缩略图，可设为false/图片地址/留空)
+type: 首页
+comments: true    #是否显示评论模块，默认true
+aplayer: true     #在需要的页面加载aplayer的js和css，请参考音乐的配置
+updated:         #文章更新日期
+tags:           #标签
+categories:     #文章分类
+keywords:       #文章关键字
+description:    #文章描述
+top_img:        #文章顶部图
+toc:            #是否打开文章目录，默认true
+toc_number:     #目录显示阅读到%几
+auto_open:      #进入文章页面是否自动打开目录
+copyright:      #显示文章的版权模块
+mathjax:        #显示mathjax(当设置mathjax的per_page: false时，才需要配置，默认 false)
+katex:          #显示katex(当设置katex的per_page: false时，才需要配置，默认 false)
+highlight_shrink:       #代码框是否打开
 ---
 
 

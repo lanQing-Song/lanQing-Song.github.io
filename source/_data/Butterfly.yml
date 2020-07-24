@@ -26,7 +26,7 @@ menu:
 # Code Blocks (代碼相關)
 # --------------------------------------
 # 代码的一些相关设置
-highlight_theme: darker # default / darker / pale night / light / ocean / mac / false
+highlight_theme: default # default / darker / pale night / light / ocean / mac / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -591,9 +591,9 @@ subtitle:
   # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
-    - 我有很多话想说可我说不出来，因为说出来就不酷了。
-    - 千万不要在吃巧克力的时候说话，不然人家会以为你在吃屎。
     - 生活有进有退，输什么也不能输了心情。
+    - 千万不要在吃巧克力的时候说话，不然人家会以为你在吃屎。
+
 
 # 页面加载动画
 # Loading Animation (加載動畫)
