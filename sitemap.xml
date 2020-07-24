@@ -2,79 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/message/index.html</loc>
+    <loc>http://yoursite.com/2020/07/23/2020-07-23/</loc>
     
-    <lastmod>2020-07-21T10:38:03.106Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/journal/index.html</loc>
-    
-    <lastmod>2020-07-21T10:37:06.344Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/fanju/index.html</loc>
-    
-    <lastmod>2020-07-21T10:36:01.987Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/19/hello-world/</loc>
-    
-    <lastmod>2020-07-21T04:45:14.602Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/20/page-1/</loc>
-    
-    <lastmod>2020-07-19T16:44:25.499Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/07/20/page/</loc>
-    
-    <lastmod>2020-07-19T16:40:26.973Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
-    
-    <lastmod>2020-07-18T07:38:54.727Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/archives/index.html</loc>
-    
-    <lastmod>2020-07-18T07:38:49.472Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/about/index.html</loc>
-    
-    <lastmod>2020-07-18T07:38:42.581Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/link/index.html</loc>
-    
-    <lastmod>2020-07-16T14:06:03.123Z</lastmod>
+    <lastmod>2020-07-24T07:03:15.549Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/index.html</loc>
     
-    <lastmod>2020-07-16T14:05:28.819Z</lastmod>
+    <lastmod>2020-07-23T08:11:43.422Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/message/index.html</loc>
+    
+    <lastmod>2020-07-23T08:11:31.121Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/link/index.html</loc>
+    
+    <lastmod>2020-07-23T08:11:21.343Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2020-07-23T08:10:44.652Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/archives/index.html</loc>
+    
+    <lastmod>2020-07-23T08:10:02.483Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2020-07-23T08:08:40.769Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/07/19/hello-world/</loc>
+    
+    <lastmod>2020-07-23T08:06:53.916Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/journal/index.html</loc>
+    
+    <lastmod>2020-07-23T07:57:10.759Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/fanju/index.html</loc>
+    
+    <lastmod>2020-07-23T07:56:54.030Z</lastmod>
     
   </url>
   
