@@ -196,7 +196,7 @@ toc:
 # 文章底部的许可证和表明文章的来源
 # 如果有文章（例如：轉載文章）不需要顯示版權，可以在文章Front-matter（md文件顶部）單獨設置
 post_copyright:
-  enable: true
+  enable: false
   decode: true
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -555,8 +555,9 @@ beautify:
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
+# 方正楷体简体
 font:
-  font-family: 方正楷体简体
+  font-family: 
   code-font:
 
 # Font settings for the site title and site subtitle
@@ -744,7 +745,7 @@ pangu:
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/lazyload
 lazyload:
-  enable: true
+  enable: false
   post: /img/loading.gif
 
 # PWA

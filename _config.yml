@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Song
-subtitle: '个人记录站'
-description: '该网站主要用来记录站主的一些琐事'
+title: 阿宋的博客
+subtitle: '学习、成长'
+description: '做些笔记吧。'
 keywords: lanQing-Song.github.io
-author: R&Song
+author: Rsong
 language: zh-CN
 timezone: Asia/Shanghai
 
