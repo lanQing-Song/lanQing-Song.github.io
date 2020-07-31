@@ -742,6 +742,7 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
 
   bottom:
+    - <script src="aplayer.js"></script>
 
     # - <script src="xxxx"></script>
 

@@ -22,8 +22,8 @@ menu:
 
 # Code Blocks (代碼相關)
 # --------------------------------------
-# 代码的一些相关设置
-highlight_theme: default # default / darker / pale night / light / ocean / mac / false
+
+highlight_theme: default # default / darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -33,7 +33,9 @@ code_word_wrap: false
 # copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
 copy:
   enable: true
-  copyright: false
+  copyright:
+    enable: false
+    limit_count: 50
 
 # social settings (社交圖標設置)
 # formal:
@@ -43,7 +45,6 @@ social:
   fab fa-github: https://github.com/lanQing-Song || Github
   fas fa-envelope: mailto:yang.rongsong@foxmail.com || Email
   fa fa-rss-square: /atom.xml ||RSS链接
-
 # search (搜索)
 # --------------------------------------
 
@@ -58,7 +59,6 @@ algolia_search:
     hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
     hits_stats: '${hits} results found in ${time} ms'
 
-# 菜单栏的本地搜索
 # Local search
 local_search:
   enable: true
@@ -96,25 +96,22 @@ avatar:
   img: https://cdn.jsdelivr.net/gh/lanQing-Song/blogimages/头像.jpg
   effect: false   #是否一直转
 
+
 # the banner image of home page
-# 首页顶部图
-# 除了首页和文档的图片，其他页面的图片可以在md文件顶部设置top_img:
 index_img: https://cdn.jsdelivr.net/gh/lanQing-Song/blogimages/index.png
 
-# if the banner of page not setting,it will show the top_img
-# 首页没有设置图片时默认的图片显示
+# if the banner of page not setting, it will show the top_img
 default_top_img: https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg
 
 # the banner image of archive page
-# 文档页面的顶部图
 archive_img:
 
 # the banner image of tag page
-# tag page, look like https://xxxxxxxxx.com/tags/butterfly
+# note: tag page, not tags page (子標籤頁面的 top_img)
 tag_img:
 
 # the banner image of category page
-# category page, look like https://xxxxxxxxx.com/categories/butterfly
+# note: category page, not categories page (子分類頁面的 top_img)
 category_img:
 
 # If you are using hexo-douban, you can configure it (如果你有使用 hexo-douban,可配置這個)
@@ -126,7 +123,6 @@ category_img:
 
 cover:
   # display the cover or not (是否顯示文章封面)
-  # 文章封面可在在md前面设置cover：图片地址，不设置的话将用下面的默认图片代替
   index_enable: true
   aside_enable: true
   archives_enable: true
@@ -134,8 +130,7 @@ cover:
   # left/right/both
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
-  # 可设置多张默认图片，会随机分配
-  default_cover: 
+  default_cover:
     - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
@@ -151,16 +146,17 @@ error_404:
 
 post_meta:
   page: # Home Page
-    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     categories: true # true or false 主頁是否顯示分類
     tags: false # true or false 主頁是否顯示標籤
+    label: true # true or false 顯示描述性文字
   post:
     date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
     categories: true # true or false 文章頁是否顯示分類
     tags: true # true or false 文章頁是否顯示標籤
+    label: true # true or false 顯示描述性文字
 
 # wordcount (字數統計)
-# 文章封面字数统计
 wordcount:
   enable: true
   post_wordcount: true
@@ -169,10 +165,8 @@ wordcount:
 
 # Display the article introduction on homepage
 # 1: description
-# 2: both (if the description exists, it will show description. or show the auto_excerpt)
+# 2: both (if the description exists, it will show description, or show the auto_excerpt)
 # 3: auto_excerpt (default)
-# 首页文章页的一些设置
-# 首页中内容只显示3行
 index_post_content:
   method: 3
   length: 500 # if you set method to 2 or 3, the length need to config
@@ -180,26 +174,19 @@ index_post_content:
 # Post
 # --------------------------------------
 
-# 文章左边目录
-# 為特定的文章配置
-# 在你的文章md文件的頭部，加入toc_number、toc和auto_open，並配置true或者false即可。
 # toc (目錄)
 toc:
   enable: true
-  number: true   # 是否显示数字
-  auto_open: true # auto open the sidebar  是否自动弹出
+  number: true
+  auto_open: true # auto open the sidebar
 
-
-# 文章底部的许可证和表明文章的来源
-# 如果有文章（例如：轉載文章）不需要顯示版權，可以在文章Front-matter（md文件顶部）單獨設置
 post_copyright:
   enable: false
-  decode: true
+  decode: false
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 # Sponsor/reward
-# 文章底部打赏按钮相关设置
 reward:
   enable: true
   QR_code:
@@ -207,22 +194,30 @@ reward:
       link:
       text: wechat
     - img: https://cdn.jsdelivr.net/gh/lanQing-Song/blogimages/收款2.jpg
-      link: 
+      link:
       text: alipay
 
 # Related Articles
-# 底部相关文章推荐，默认推荐六篇，可自定义
 related_post:
   enable: true
   limit: 6 # Number of posts displayed
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption (圖片描述文字)
-photofigcaption: true
+photofigcaption: false
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
 anchor: false
+
+# Displays outdated notice for a post (文章過期提醒)
+noticeOutdate:
+  enable: false
+  style: flat # style: simple/flat
+  limit_day: 500 # When will it be shown
+  position: top # position: top/bottom
+  message_prev: It has been
+  message_next: days since the last update, the content of the article may be outdated.
 
 # Share System (分享功能)
 # --------------------------------------
@@ -255,18 +250,27 @@ addtoany:
 # Comments System
 # --------------------------------------
 
+comments:
+  # Up to two comments system, the first will be shown as default
+  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Utterances/Facebook Comments
+  use:
+  - Valine
+  # - Disqus
+  text: true # Display the comment name next to the button
+  # lazyload: The comment system will be load when comment element enters the browser's viewport.
+  # If you set it to false, the comment count will be invalid
+  lazyload: false
+  count: false # Display comment count in top_img
+
 # disqus
 # https://disqus.com/
 disqus:
-  enable: false
   shortname:
-  count: false # dispaly comment count in top_img
 
 # Alternative Disqus - Render comments with Disqus API
-# DisqusJS評論系統，可以實現在網路審查地區載入 Disqus 評論列表，兼容原版
+# DisqusJS 評論系統，可以實現在網路審查地區載入 Disqus 評論列表，兼容原版
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
-  enable: false
   shortname:
   siteName:
   apikey:
@@ -274,18 +278,15 @@ disqusjs:
   nocomment: # display when a blog post or an article has no comment attached
   admin:
   adminLabel:
-  count: false # dispaly comment count in top_img
 
-# livere(來必力)
+# livere (來必力)
 # https://www.livere.com/
 livere:
-  enable: false
   uid:
 
 # gitalk
 # https://github.com/gitalk/gitalk
 gitalk:
-  enable: false
   client_id:
   client_secret:
   repo:
@@ -296,7 +297,6 @@ gitalk:
   distractionFreeMode: false # Facebook-like distraction free mode.
   pagerDirection: last # Comment sorting direction, available values are last and first.
   createIssueManually: false # Gitalk will create a corresponding github issue for your every single page automatically
-  count: false # dispaly comment count in top_img
 
 # valine
 # https://valine.js.org
@@ -320,7 +320,6 @@ valine:
 # utterances
 # https://utteranc.es/
 utterances:
-  enable: false
   repo:
   # Issue Mapping: pathname/url/title/og:title
   issue_term: pathname
@@ -331,13 +330,11 @@ utterances:
 # Facebook Comments Plugin
 # https://developers.facebook.com/docs/plugins/comments/
 facebook_comments:
-  enable: false
   app_id:
   user_id: # optional
   pageSize: 10 # The number of comments to show
   order_by: social # social/time/reverse_time
   lang: en_US # Language en_US/zh_CN/zh_TW and so on
-  count: false
 
 # Chat Services
 # --------------------------------------
@@ -373,21 +370,25 @@ gitter:
   enable: false
   room:
 
+# crisp
+# https://crisp.chat/en/
+crisp:
+  enable: false
+  website_id:
+
 # Footer Settings
 # --------------------------------------
-
-# 底部博客开启时间
-since: 2020
-
-footer_custom_text: 欢迎来到我的博客，可以随便看看！
-
-footer_copyright: true
-
-ICP:
-  enable: false
-  url:
-  text:
-  icon: /img/icp.png
+footer:
+  owner:
+    enable: true
+    since: 2020
+  custom_text: 欢迎来到我的博客，可以随便看看！
+  copyright: true # Copyright of theme and framework
+  ICP: # Chinese ICP License
+    enable: false
+    url:
+    text:
+    icon: /img/icp.png
 
 # Analysis
 # --------------------------------------
@@ -407,6 +408,7 @@ tencent_analytics:
 # Google Adsense (谷歌廣告)
 google_adsense:
   enable: false
+  auto_ads: true
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
   client:
   enable_page_level_ads: true
@@ -436,6 +438,10 @@ baidu_site_verification:
 # see http://zhanzhang.so.com/
 qihu_site_verification:
 
+# Yandex Webmaster tools verification setting
+# see https://webmaster.yandex.com/
+yandex_site_verification:
+
 # Beautify/Effect (美化/效果)
 # --------------------------------------
 
@@ -459,11 +465,9 @@ theme_color:
 
 # The top_img settings of home page
 # default: top img - full screen, site info - middle (默認top_img全屏，site_info在中間)
-# The positon of site info, eg: 300px/300em/300rem/10% (主頁標題距離頂部距離)
-# 首页标题的高度，不设置的话就默认
+# The position of site info, eg: 300px/300em/300rem/10% (主頁標題距離頂部距離)
 index_site_info_top:
 # The height of top_img, eg: 300px/300em/300rem (主頁top_img高度)
-# 首页图片的高度，不设置的话就默认全屏
 index_top_img_height:
 
 # The user interface setting of category and tag page (category和tag頁的UI設置)
@@ -477,12 +481,9 @@ tag_ui: # 留空或 index
 # The formal of color: '#49B202'
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 # White color will be shown as default
-# 网站背景
 background: '#efefef'
 
 # Show the footer background image (same as top_img)
-
-# footer背景是否和该文章top_img图一致
 footer_bg: false
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
@@ -498,8 +499,8 @@ canvas_ribbon:
   size: 150
   alpha: 0.6
   zIndex: -1
-  click_to_change: true
-  mobile: true
+  click_to_change: false
+  mobile: false
 
 # Dynamic ribbon (動態彩帶)
 canvas_ribbon_piao:
@@ -518,7 +519,6 @@ canvas_nest:
 
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
-# 启动的话首页将不会有打字效果
 activate_power_mode:
   enable: false
   colorful: true # open particle animation (冒光特效)
@@ -552,21 +552,20 @@ beautify:
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
-# 方正楷体简体
 font:
-  font-family: 
+  font-family:
   code-font:
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
   font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
-  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', Microsoft YaHei', sans-serif
+  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
   enable: true
-  icon: # the unicode value of Font Awesome icon
+  icon: # the unicode value of Font Awesome icon, such as '\3423'
   icon-top:
 
 # the subtitle on homepage (主頁subtitle)
@@ -590,29 +589,32 @@ subtitle:
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
     - 生活有进有退，输什么也不能输了心情。
-    - 千万不要在吃巧克力的时候说话，不然人家会以为你在吃屎。
 
 
-# 页面加载动画
 # Loading Animation (加載動畫)
 preloader: false
 
 # aside (側邊欄)
 # --------------------------------------
-# 侧边栏卡片相关的设置，位置等
+
 aside:
   enable: true
   mobile: true # display on mobile
-  position: right # left or right
+  position: left # left or right
   card_author:
     enable: true
     description:
+    button:
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/xxxxxx
   card_announcement:
     enable: true
     content: This is my Blog
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
+    sort: date # date or updated
   card_categories:
     enable: true
     limit: 8 # if set 0 will show all
@@ -620,7 +622,7 @@ aside:
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
-    color: true
+    color: false
   card_archives:
     enable: true
     type: monthly # yearly or monthly
@@ -639,12 +641,12 @@ busuanzi:
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: true
-  publish_date: 2020/7/22 12:00:00
+  enable: false
+  publish_date:
 
 # Bottom right button (右下角按鈕)
 # --------------------------------------
-# 网站字体的切换
+
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
   enable: true
@@ -659,10 +661,10 @@ translate:
   # The text of the button when the language is Traditional Chinese
   msgToSimplifiedChinese: '繁'
 
+
 # Read Mode (閲讀模式)
 readmode: true
 
-# 网站白天和黑夜的设置
 # dark mode
 darkmode:
   enable: true
@@ -684,7 +686,6 @@ medium_zoom: false
 
 # fancybox
 # http://fancyapps.com/fancybox/3/
-# 点击查看图片
 fancybox: true
 
 # Tag Plugins settings (標籤外掛)
@@ -697,7 +698,6 @@ mermaid:
   # built-in themes: default/forest/dark/neutral
   theme: default
 
-# 文章提示标签
 # Note (Bootstrap Callout)
 note:
   # Note tag style values:
@@ -715,20 +715,20 @@ note:
 # other
 # --------------------------------------
 
-  # https://github.com/MoOx/pjax
-# pjax: true
+# Pjax [Beta]
+# It may contain bugs and unstable, give feedback when you find the bugs.
+# https://github.com/MoOx/pjax
+pjax: true
 
-# # Inject the css and script (aplayer/meting)
-# aplayerInject: true 
-
+# Inject the css and script (aplayer/meting)
+aplayerInject: true
 
 # Snackbar (Toast Notification 彈窗)
 # https://github.com/polonel/SnackBar
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
-# 点击之后弹出提示效果
 snackbar:
-  enable: true
+  enable: false
   position: bottom-left
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#121212' # The background color of Toast Notification in dark mode
@@ -749,7 +749,7 @@ pangu:
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/lazyload
 lazyload:
-  enable: false
+  enable: true
   post: /img/loading.gif
 
 # PWA
@@ -774,31 +774,17 @@ Open_Graph_meta: true
 # Caches the contents in a fragment, speed up the generation (開啟hexo自帶的緩存,加快生成速度)
 fragment_cache: true
 
-
-
-
-
-
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
-  
   head:
-    
     - <link rel="stylesheet" href="/css/Rsong.css">
 
+  # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-
-    # - <div id="music" key="5f171fe7e4f4c" api="https://music.m0x.cn"></div><script id="xplayer" src="https://music.m0x.cn/Static/player2/js/player.js" ></script>
-
-    # - <script src="xxxx"></script>
-
     # - <script src="/aplayer.js"></script>
-
-
-
-
+    - <div id="music" key="5f171fe7e4f4c" api="https://music.m0x.cn"></div><script id="xplayer" src="https://music.m0x.cn/Static/player2/js/player.js" ></script>
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
@@ -809,12 +795,10 @@ CDN:
   main: /js/main.js
   utils: /js/utils.js
 
-  # # pjax
-  # pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
-
+  # pjax
+  pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
 
   # comments
-  blueimp_md5: https://cdn.jsdelivr.net/npm/blueimp-md5/js/md5.min.js
   gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
   valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
@@ -834,7 +818,7 @@ CDN:
   algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
 
   # math
-  mathjax: https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   katex: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
   katex_copytex: https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js
   katex_copytex_css: https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css
@@ -850,7 +834,7 @@ CDN:
 
   lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js
   instantpage: https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js
-  typed: https://cdn.jsdelivr.net/npm/typed.js
+  typed: https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js
   pangu: https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js
 
   # photo
@@ -882,7 +866,4 @@ CDN:
   # aplayer
   aplayer_css: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
   aplayer_js: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
-  # meting_js: https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js
   meting_js: https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js
-  # pjax
-  pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
