@@ -21,6 +21,20 @@ pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
+# 豆瓣
+douban:
+  user: 220317790
+  builtin: true
+  book:
+    title: 'This is my book title'
+    quote: 'This is my book quote'
+  movie:
+    title: '那些还不错不错的电影！'
+    quote: '每个人的品味不同，这里是我个人觉得比较优秀的一些影视，有兴趣的的朋友可以去看看。'
+  game:
+    title: 'This is my game title'
+    quote: 'This is my game quote'
+  timeout: 10000 
 
 # 搜索本地
 search:
@@ -28,7 +42,7 @@ search:
   field: post
   content: true
 
-
+# 黑猫
 live2d:
 	enable: true
 	scriptFrom: local
@@ -41,6 +55,18 @@ live2d:
 	mobile: 
 		show: false      #是否在手机端显示
 
+# 哔哩哔哩插件
+bangumi:
+  enable: true
+  path: localhost:4000/fanju/
+  vmid: 35925689
+  title: '追番列表'
+  quote: '生命不息，追番不止！' 
+  show: 1
+  loading:
+  metaColor:
+  color:
+  webp: true
 
 # Directory
 source_dir: source
