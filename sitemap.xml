@@ -2,6 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/music/index.html</loc>
+    
+    <lastmod>2020-08-05T16:48:30.047Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/05/2020-08-05.9/</loc>
+    
+    <lastmod>2020-08-05T13:05:53.082Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/05/2020-08-05.8/</loc>
+    
+    <lastmod>2020-08-05T13:04:45.347Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/05/2020-08-05.7/</loc>
+    
+    <lastmod>2020-08-05T13:02:48.607Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/05/2020-08-05.6/</loc>
+    
+    <lastmod>2020-08-05T13:00:32.819Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/05/2020-08-05.5/</loc>
+    
+    <lastmod>2020-08-05T12:57:22.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/05/2020-08-05.4/</loc>
+    
+    <lastmod>2020-08-05T12:52:21.321Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/05/2020-08-05.3/</loc>
+    
+    <lastmod>2020-08-05T12:36:25.323Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/05/2020-08-05.2/</loc>
+    
+    <lastmod>2020-08-05T12:34:43.147Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/05/2020-08-05.1/</loc>
+    
+    <lastmod>2020-08-05T12:29:54.285Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/categories/index.html</loc>
     
     <lastmod>2020-08-04T15:04:06.001Z</lastmod>
@@ -19,13 +89,6 @@
     <loc>http://yoursite.com/movies/index.html</loc>
     
     <lastmod>2020-08-04T15:03:48.288Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/music/index.html</loc>
-    
-    <lastmod>2020-08-04T15:03:37.636Z</lastmod>
     
   </url>
   
