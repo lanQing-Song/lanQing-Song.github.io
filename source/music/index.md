@@ -13,7 +13,8 @@ aside:              #显示文章目录侧边栏（TOC)，默认true
 aplayer: true           #在需要的页面加载aplayer的js和css，请参考音乐的配置
 highlight_shrink:       #配置代码框是否展开(true/false)(默认为设置中highlight_shrink的配置)
 ---
+>国语
 {% meting "5134756991" "netease" "playlist" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86"%}
 
-
-
+>日语
+{% meting "5161731301" "netease" "playlist" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86"%}
