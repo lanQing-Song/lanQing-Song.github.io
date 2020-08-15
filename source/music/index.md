@@ -18,3 +18,8 @@ highlight_shrink:       #配置代码框是否展开(true/false)(默认为设置
 
 >日语
 {% meting "5161731301" "netease" "playlist" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86"%}
+
+> 纯音乐
+>
+> {% meting "5162832435" "netease" "playlist" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86"%}
+
