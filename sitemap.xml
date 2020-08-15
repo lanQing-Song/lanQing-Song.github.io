@@ -4,7 +4,49 @@
   <url>
     <loc>http://yoursite.com/music/index.html</loc>
     
-    <lastmod>2020-08-05T16:48:30.047Z</lastmod>
+    <lastmod>2020-08-15T16:12:16.753Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/journal/index.html</loc>
+    
+    <lastmod>2020-08-15T16:01:41.851Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/15/2020-08-15.1/</loc>
+    
+    <lastmod>2020-08-15T10:14:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/15/2020-08-15.2/</loc>
+    
+    <lastmod>2020-08-15T06:20:27.884Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/07/2020-08-07.3/</loc>
+    
+    <lastmod>2020-08-10T03:54:07.018Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/07/2020-08-07.2/</loc>
+    
+    <lastmod>2020-08-07T13:27:34.712Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/07/2020-08-07.1/</loc>
+    
+    <lastmod>2020-08-07T13:25:33.774Z</lastmod>
     
   </url>
   
@@ -75,13 +117,6 @@
     <loc>http://yoursite.com/categories/index.html</loc>
     
     <lastmod>2020-08-04T15:04:06.001Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/journal/index.html</loc>
-    
-    <lastmod>2020-08-04T15:04:02.076Z</lastmod>
     
   </url>
   
