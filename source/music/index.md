@@ -13,6 +13,12 @@ aside:              #显示文章目录侧边栏（TOC)，默认true
 aplayer: true           #在需要的页面加载aplayer的js和css，请参考音乐的配置
 highlight_shrink:       #配置代码框是否展开(true/false)(默认为设置中highlight_shrink的配置)
 ---
+>喜欢的MAD，b站作者：云の彼方に，视频原链接：[https://space.bilibili.com/1641107?spm_id_from=333.788.b_765f7570696e666f.2](https://space.bilibili.com/1641107?spm_id_from=333.788.b_765f7570696e666f.2)
+<div style="position:relative; padding:30% 45%">
+<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?aid=73844200&bvid=BV1zE411h7Pi&cid=126375737&page=1&as_wide=1&high_quality=1&danmaku=0" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"> </iframe>
+</div>
+
+
 >国语
 {% meting "5134756991" "netease" "playlist" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86"%}
 
@@ -20,6 +26,5 @@ highlight_shrink:       #配置代码框是否展开(true/false)(默认为设置
 {% meting "5161731301" "netease" "playlist" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86"%}
 
 > 纯音乐
->
-> {% meting "5162832435" "netease" "playlist" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86"%}
+{% meting "5162832435" "netease" "playlist" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86"%}
 

@@ -5,7 +5,7 @@
 # Site
 title: Rsong☛Blog
 subtitle: '!!!∑(ﾟДﾟノ)ノ'
-description: '做些笔记吧。'
+description: '既然无法长大那就不要学者别人去挣扎。'
 keywords: lanQing-Song.github.io
 author: Rsong
 language: zh-CN
@@ -29,12 +29,13 @@ douban:
   #   title: 'This is my book title'
   #   quote: 'This is my book quote'
   movie:
-    title: '那些还不错不错的电影！'
+    title: '每一部高分电影都值得一看'
     quote: '每个人的品味不同，这里是我个人觉得比较优秀的一些影视，有兴趣的的朋友可以去看看。'
   # game:
   #   title: 'This is my game title'
   #   quote: 'This is my game quote'
   timeout: 10000
+
 
 # 搜索本地
 search:
