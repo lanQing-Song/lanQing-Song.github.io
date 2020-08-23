@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-18T13:35:15.113Z</updated>
+  <updated>2020-08-20T03:56:10.591Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>阿里图标-symbolweb应用</title>
+    <link href="http://yoursite.com/2020/08/20/2020-08-20.1/"/>
+    <id>http://yoursite.com/2020/08/20/2020-08-20.1/</id>
+    <published>2020-08-20T03:32:32.534Z</published>
+    <updated>2020-08-20T03:56:10.591Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="symbol引用"><a href="#symbol引用" class="headerlink" title="symbol引用"></a>symbol引用</h2><hr><p>这是一种全新的使用方式，应该说这才是未来的主流，也是平台目前推荐的用法。相关介绍可以参考这篇<a href="https://www.iconfont.cn/help/detail?spm=a313x.7781069.1998910419.17&helptype=code" target="_blank" rel="noopener">文章</a> 这种用法其实是做了一个svg的集合，与上面两种相比具有如下特点：</p><ul><li>支持多色图标了，不再受单色限制。</li><li>通过一些技巧，支持像字体那样，通过<code>font-size</code>,<code>color</code>来调整样式。</li><li>兼容性较差，支持 ie9+,及现代浏览器。</li><li>浏览器渲染svg的性能一般，还不如png。</li></ul><p>使用步骤如下：</p><h3 id="第一步：拷贝项目下面生成的symbol代码并引入，如："><a href="#第一步：拷贝项目下面生成的symbol代码并引入，如：" class="headerlink" title="第一步：拷贝项目下面生成的symbol代码并引入，如："></a>第一步：拷贝项目下面生成的symbol代码并引入，如：</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">"//at.alicdn.com/t/font_1924059_pf56q7god8h.js"</span>&gt;&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure><h3 id="第二步：加入通用css代码（引入一次就行）："><a href="#第二步：加入通用css代码（引入一次就行）：" class="headerlink" title="第二步：加入通用css代码（引入一次就行）："></a>第二步：加入通用css代码（引入一次就行）：</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=<span class="string">"text/css"</span>&gt;</span><br><span class="line">    .icon &#123;</span><br><span class="line">       width: <span class="number">1</span>em; height: <span class="number">1</span>em;</span><br><span class="line">       vertical-align: <span class="number">-0.15</span>em;</span><br><span class="line">       fill: currentColor;</span><br><span class="line">       overflow: hidden;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;<span class="regexp">/style&gt;</span></span><br></pre></td></tr></table></figure><h3 id="第三步：挑选相应图标并获取类名，应用于页面："><a href="#第三步：挑选相应图标并获取类名，应用于页面：" class="headerlink" title="第三步：挑选相应图标并获取类名，应用于页面："></a>第三步：挑选相应图标并获取类名，应用于页面：</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;svg <span class="class"><span class="keyword">class</span></span>=<span class="string">"icon"</span> aria-hidden=<span class="string">"true"</span>&gt;</span><br><span class="line">    &lt;use xlink:href=<span class="string">"#icon-xxx"</span>&gt;&lt;<span class="regexp">/use&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>svg&gt;</span><br></pre></td></tr></table></figure><p><strong>如：</strong></p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> &lt;svg <span class="class"><span class="keyword">class</span></span>=<span class="string">"icon"</span> aria-hidden=<span class="string">"true"</span>&gt;</span><br><span class="line">   &lt;use xlink:href=<span class="string">"#icon-zhifeiji1"</span>&gt;&lt;<span class="regexp">/use&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>svg&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;symbol引用&quot;&gt;&lt;a href=&quot;#symbol引用&quot; class=&quot;headerlink&quot; title=&quot;symbol引用&quot;&gt;&lt;/a&gt;symbol引用&lt;/h2&gt;&lt;hr&gt;
+&lt;p&gt;这是一种全新的使用方式，应该说这才是未来的主流，也是平台目前推荐的用法。相关介绍可
+      
+    
+    </summary>
+    
+    
+      <category term="Iconfont" scheme="http://yoursite.com/categories/Iconfont/"/>
+    
+    
+      <category term="Iconfont" scheme="http://yoursite.com/tags/Iconfont/"/>
+    
+  </entry>
   
   <entry>
     <title>数据结构：队列</title>
@@ -507,32 +534,6 @@
     
     
       <category term="对象高级_继承模式" scheme="http://yoursite.com/categories/%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7-%E7%BB%A7%E6%89%BF%E6%A8%A1%E5%BC%8F/"/>
-    
-    
-      <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS笔记：自定义构造函数模式+原型</title>
-    <link href="http://yoursite.com/2020/07/30/2020-07-30.3/"/>
-    <id>http://yoursite.com/2020/07/30/2020-07-30.3/</id>
-    <published>2020-07-30T08:48:35.679Z</published>
-    <updated>2020-07-30T08:52:01.069Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br><span class="line">    &lt;title&gt;Document&lt;<span class="regexp">/title&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;!-- </span><br><span class="line">        方式四：自定义构造函数模式</span><br><span class="line">            *套路：自定义构造函数，通过<span class="keyword">new</span>创建对象</span><br><span class="line">            *使用场景：需要创建多个类型确定的对象</span><br><span class="line">            *问题：每个对象都有相同的数据，浪费内存</span><br><span class="line"></span><br><span class="line">     --&gt;</span><br><span class="line">     &lt;script&gt;</span><br><span class="line">        <span class="comment">//  自定义类型Person</span></span><br><span class="line">            <span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name,age</span>)</span>&#123;</span><br><span class="line">                <span class="keyword">this</span>.name = name</span><br><span class="line">                <span class="keyword">this</span>.age = age</span><br><span class="line">                <span class="keyword">this</span>.setName = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">                    <span class="keyword">this</span>.name  = name</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">var</span> p1 = <span class="keyword">new</span> Person(<span class="string">"Tome"</span>,<span class="number">12</span>)</span><br><span class="line">            p1.setName(<span class="string">"jack"</span>)</span><br><span class="line">            <span class="built_in">console</span>.log(p1)</span><br><span class="line">            <span class="built_in">console</span>.log(p1 <span class="keyword">instanceof</span> Person)</span><br><span class="line"></span><br><span class="line">        <span class="comment">//自定义类型dog</span></span><br><span class="line">            <span class="function"><span class="keyword">function</span> <span class="title">dog</span>(<span class="params">name,age</span>)</span>&#123;</span><br><span class="line">                <span class="keyword">this</span>.name=name</span><br><span class="line">                <span class="keyword">this</span>.age=age</span><br><span class="line">                <span class="keyword">this</span>.setName= <span class="function"><span class="keyword">function</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">                    <span class="keyword">this</span>.name=name</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">var</span> dog1 = <span class="keyword">new</span> dog(<span class="string">"erha"</span>,<span class="number">3</span>)</span><br><span class="line">            dog1.setName(<span class="string">"sanha"</span>)</span><br><span class="line">            <span class="built_in">console</span>.log(dog1)</span><br><span class="line">            <span class="built_in">console</span>.log(dog1 <span class="keyword">instanceof</span> dog)</span><br><span class="line">            </span><br><span class="line">     &lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;!-- </span></span><br><span class="line"><span class="regexp">        方式五：构造函数+原型的组合模式</span></span><br><span class="line"><span class="regexp">            *套路：自定义构造函数，属性在函数中初始化，方法添加到原型上</span></span><br><span class="line"><span class="regexp">            *适用场景：需要创建多个类型确定的对象</span></span><br><span class="line"><span class="regexp">     --&gt;</span></span><br><span class="line"><span class="regexp">     &lt;script&gt;</span></span><br><span class="line"><span class="regexp">         function Person(name,age)&#123;/</span><span class="regexp">/在构造函数中只初始化一般函数</span></span><br><span class="line"><span class="regexp">             this.name =name</span></span><br><span class="line"><span class="regexp">             this.age = age</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">         &#125;</span></span><br><span class="line"><span class="regexp">         /</span><span class="regexp">/原型的方法是给实例用的，实例通过原型链获得</span></span><br><span class="line"><span class="regexp">         Person.prototype.setName = function(name)&#123;</span></span><br><span class="line"><span class="regexp">             this.name=name</span></span><br><span class="line"><span class="regexp">         &#125;</span></span><br><span class="line"><span class="regexp">         var p1 =new Person("haha",23)</span></span><br><span class="line"><span class="regexp">         p1.setName("jack")</span></span><br><span class="line"><span class="regexp">         console.log(p1)</span></span><br><span class="line"><span class="regexp">         console.log(p1.name)</span></span><br><span class="line"><span class="regexp">     &lt;/</span>script&gt;</span><br><span class="line">&lt;<span class="regexp">/body&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>html&gt;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span 
-      
-    
-    </summary>
-    
-    
-      <category term="对象高级_创建模式" scheme="http://yoursite.com/categories/%E5%AF%B9%E8%B1%A1%E9%AB%98%E7%BA%A7-%E5%88%9B%E5%BB%BA%E6%A8%A1%E5%BC%8F/"/>
     
     
       <category term="JS" scheme="http://yoursite.com/tags/JS/"/>
