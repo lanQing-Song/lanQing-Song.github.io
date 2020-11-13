@@ -330,13 +330,6 @@
     
   </url>
   
-  <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
-    
-    <lastmod>2020-08-04</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>http://yoursite.com/</loc>
@@ -347,14 +340,14 @@
 
   
   <url>
-    <loc>http://yoursite.com/tags/CDN/</loc>
+    <loc>http://yoursite.com/tags/Git/</loc>
     <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/Git/</loc>
+    <loc>http://yoursite.com/tags/CDN/</loc>
     <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -382,14 +375,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/%E5%8E%9F%E7%94%9F%E8%BD%AE%E6%92%AD%E5%9B%BE/</loc>
+    <loc>http://yoursite.com/tags/move%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/</loc>
     <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/move%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/</loc>
+    <loc>http://yoursite.com/tags/%E5%8E%9F%E7%94%9F%E8%BD%AE%E6%92%AD%E5%9B%BE/</loc>
     <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -404,6 +397,13 @@
   
   <url>
     <loc>http://yoursite.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8C%87%E9%92%88/</loc>
+    <lastmod>2020-11-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/%E7%BB%93%E6%9E%84%E4%BD%93%E6%8C%87%E9%92%88/</loc>
     <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -431,13 +431,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/%E7%BB%93%E6%9E%84%E4%BD%93%E6%8C%87%E9%92%88/</loc>
-    <lastmod>2020-11-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/tags/Iconfont/</loc>
     <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
@@ -454,14 +447,14 @@
 
   
   <url>
-    <loc>http://yoursite.com/categories/CDN/</loc>
+    <loc>http://yoursite.com/categories/git/</loc>
     <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/git/</loc>
+    <loc>http://yoursite.com/categories/CDN/</loc>
     <lastmod>2020-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
