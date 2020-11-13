@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Rsong☛Blog
+title: R_song☛Blog
 subtitle: '!!!∑(ﾟДﾟノ)ノ'
-description: '既然无法长大那就不要学者别人去挣扎。'
+description: '博客断更了几个月，接下来会持续更新，做做笔记，发发随笔之类。'
 keywords: lanQing-Song.github.io
-author: Rsong
+author: R_song
 language: zh-CN
 timezone: Asia/Shanghai
 
@@ -21,20 +21,119 @@ pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
+
+# shoka主题配置
+markdown:
+  render: # 渲染器设置
+    html: true # 过滤 HTML 标签
+    xhtmlOut: true # 使用 '/' 来闭合单标签 （比如 <br />）。
+    breaks: true # 转换段落里的 '\n' 到 <br>。
+    linkify: true # 将类似 URL 的文本自动转换为链接。
+    typographer: 
+    quotes: '“”‘’'
+  plugins: # markdown-it 插件设置
+    - plugin:
+        name: markdown-it-toc-and-anchor
+        enable: true
+        options: # 文章目录以及锚点应用的 class 名称，shoka 主题必须设置成这样
+          tocClassName: 'toc'
+          anchorClassName: 'anchor'
+    - plugin:
+        name: markdown-it-multimd-table
+        enable: true
+        options:
+          multiline: true
+          rowspan: true
+          headerless: true
+    - plugin:
+        name: ./markdown-it-furigana
+        enable: true
+        options:
+          fallbackParens: "()"
+    - plugin:
+        name: ./markdown-it-spoiler
+        enable: true
+        options:
+          title: "你知道得太多了"
+
+# 压缩js/css配置
+minify:
+  html:
+    enable: false
+    exclude: # 排除 hexo-feed 用到的模板文件
+      - '**/json.ejs'
+      - '**/atom.ejs'
+      - '**/rss.ejs'
+  css:
+    enable: true
+    exclude:
+      - '**/*.min.css'
+  js:
+    enable: true
+    mangle:
+      toplevel: true
+    output:
+    compress:
+    exclude:
+      - '**/*.min.js'
+
+# # autoprefixer 配置 图片反转配置
+# autoprefixer:
+#   exclude:
+#     - '*.min.css'
+
+
+# #algolia 配置建议
+algolia:
+  appId: #Your appId
+  apiKey: #Your apiKey
+  adminApiKey: #Your adminApiKey
+  chunkSize: 5000
+  indexName: "shoka"
+  fields:
+    - title #必须配置
+    - path #必须配置
+    - categories #推荐配置
+    - content:strip:truncate,0,2000
+    - gallery
+    - photos
+    - tags
+
+
+
+# feed 配置建议
+
+feed:
+    limit: 20
+    order_by: "-date"
+    tag_dir: false
+    category_dir: false
+    rss:
+        enable: true
+        template: "themes/shoka/layout/_alternate/rss.ejs"
+        output: "rss.xml"
+    atom:
+        enable: true
+        template: "themes/shoka/layout/_alternate/atom.ejs"
+        output: "atom.xml"
+    jsonFeed:
+        enable: true
+        template: "themes/shoka/layout/_alternate/json.ejs"
+        output: "feed.json"
 # 豆瓣
-douban:
-  user: 220317790
-  builtin: false
-  # book:
-  #   title: 'This is my book title'
-  #   quote: 'This is my book quote'
-  movie:
-    title: '每一部高分电影都值得一看'
-    quote: '每个人的品味不同，这里是我个人觉得比较优秀的一些影视，有兴趣的的朋友可以去看看。'
-  # game:
-  #   title: 'This is my game title'
-  #   quote: 'This is my game quote'
-  timeout: 10000
+# douban:
+#   user: 220317790
+#   builtin: false
+#   # book:
+#   #   title: 'This is my book title'
+#   #   quote: 'This is my book quote'
+#   movie:
+#     title: '每一部高分电影都值得一看'
+#     quote: '每个人的品味不同，这里是我个人觉得比较优秀的一些影视，有兴趣的的朋友可以去看看。'
+#   # game:
+#   #   title: 'This is my game title'
+#   #   quote: 'This is my game quote'
+#   timeout: 10000
 
 
 # 搜索本地
@@ -45,7 +144,7 @@ search:
 
 # 黑猫
 live2d:
-	enable: true
+	enable: false
 	scriptFrom: local
 	model: 
 		use: live2d-widget-model-hijiki #模型选择
@@ -80,7 +179,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -99,6 +198,13 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  JavaScript: javascript
+  CSS: css
+  Nodejs: nodejs
+  生活随笔: diary
+  C程序设计: C
+  jQuery: jQuery
+  Git: git
 tag_map:
 
 # Metadata elements
@@ -125,15 +231,12 @@ include:
 exclude:
 ignore:
 
-# 音乐播放器
-aplayer:
-  meting: true
-  asset_inject: false
+
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: butterfly-dev
+theme: shoka
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
