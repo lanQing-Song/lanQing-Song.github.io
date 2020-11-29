@@ -5,9 +5,9 @@
 # Site
 title: R_song☛Blog
 subtitle: '!!!∑(ﾟДﾟノ)ノ'
-description: '博客断更了几个月，接下来会持续更新，做做笔记，发发随笔之类。'
+description: '博客断更了几个月，接下来会持续更新，做做笔记，发发随笔之类。新换了主题，还有很多要补充和优化的地方，逐渐更新。'
 keywords: lanQing-Song.github.io
-author: R_song
+author: 
 language: zh-CN
 timezone: Asia/Shanghai
 
@@ -59,7 +59,7 @@ markdown:
 # 压缩js/css配置
 minify:
   html:
-    enable: false
+    enable: true
     exclude: # 排除 hexo-feed 用到的模板文件
       - '**/json.ejs'
       - '**/atom.ejs'
@@ -123,10 +123,10 @@ feed:
 # 豆瓣
 # douban:
 #   user: 220317790
-#   builtin: false
-#   # book:
-#   #   title: 'This is my book title'
-#   #   quote: 'This is my book quote'
+#   builtin: ture
+#   book:
+#     title: 'This is my book title'
+#     quote: 'This is my book quote'
 #   movie:
 #     title: '每一部高分电影都值得一看'
 #     quote: '每个人的品味不同，这里是我个人觉得比较优秀的一些影视，有兴趣的的朋友可以去看看。'
@@ -201,10 +201,11 @@ category_map:
   JavaScript: javascript
   CSS: css
   Nodejs: nodejs
-  生活随笔: diary
+  日常随笔: diary
   C程序设计: C
   jQuery: jQuery
   Git: git
+  互联网: internet
 tag_map:
 
 # Metadata elements

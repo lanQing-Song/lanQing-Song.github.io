@@ -104,7 +104,7 @@ menu:
     archives: /archives/ || list-alt
     categories: /categories/ || th
     tags: /tags/ || tags
-  friends: /friends/ || heart
+  兴趣: /movies/ || heart
   links: /links/ || magic
 
 # Social Links
@@ -160,7 +160,7 @@ post:
 # Reward (Donate)
 reward:
   # If true, reward will be displayed in every article by default.
-  enable: fa'l'se
+  enable: false
   account:
     wechatpay: /wechatpay.png
     alipay: /alipay.png
@@ -226,11 +226,14 @@ valine:
 audio:
   - title: 列表1
     list:
+     - https://music.163.com/#/playlist?id=5160176668
+  - title: 列表2
+    list:
      - https://music.163.com/#/playlist?id=5134756991
-    #  - https://music.163.com/#/my/m/music/playlist?id=5160176668
-  # - title: 列表2
-  #   list:
-  #    - https://music.163.com/#/playlist?id=2031842656
+  - title: 列表3
+    list:
+     - https://music.163.com/#/playlist?id=5161731301
+    
 
 # random image api
 image_server: # "https://acg.xydwz.cn/api/api.php"
